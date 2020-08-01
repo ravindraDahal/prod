@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <meta content="width=device-width,initial-scale=1" name="viewport" />
     <meta content="description" name="description" />
     <meta name="google" content="notranslate" />
-    <meta content="Mashup templates have been developped by Orson.io team" name="author" />
+    <meta
+      content="Mashup templates have been developped by Orson.io team"
+      name="author"
+    />
 
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no" />
-    <link rel="shortcut icon" type="image/x-icon" href="/howdy/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/howdy/assets/apple-icon-180x180.png" />
-    <link href="/howdy/assets/favicon.ico" rel="icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/assets/apple-icon-180x180.png"
+    />
+    <link href="/static/assets/favicon.ico" rel="icon" />
 
     <!-- <link
       rel="shortcut icon"
-      href="{{ url_for('howdy', filename='favicon.ico') }}"
+      href="{{ url_for('static', filename='favicon.ico') }}"
     /> -->
 
     <title>Home</title>
@@ -35,8 +41,13 @@
     <header>
       <nav class="navbar  navbar-fixed-top navbar-inverse">
         <div class="container">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
-            aria-expanded="false">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar-collapse"
+            aria-expanded="false"
+          >
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -50,7 +61,9 @@
               <li><a href="./about.html" title="">03 : About me</a></li>
               <li><a href="./contact.html" title="">04 : Contact</a></li>
               <li>
-                <a href="howdy/resume.pdf" target="_blank" title="">05 : Resume</a>
+                <a href="static/resume.pdf" target="_blank" title=""
+                  >05 : Resume</a
+                >
               </li>
             </ul>
           </div>
@@ -58,8 +71,10 @@
       </nav>
     </header>
     <!-- Add your site or app content here -->
-    <div class="hero-full-container background-image-container white-text-container"
-      style="background-image: url('/howdy/assets/images/space.jpg')">
+    <div
+      class="hero-full-container background-image-container white-text-container"
+      style="background-image: url('/static/assets/images/space.jpg')"
+    >
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
@@ -82,7 +97,7 @@
     </div>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function (event) {
+      document.addEventListener("DOMContentLoaded", function(event) {
         type();
         movingBackgroundImage();
       });
@@ -90,5 +105,4 @@
 
     <script type="text/javascript" src="/static/main.70a66962.js"></script>
   </body>
-
 </html>
