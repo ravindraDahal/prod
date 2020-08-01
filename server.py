@@ -1,7 +1,7 @@
 from flask import send_file, current_app as app
 from flask import Flask, render_template, request, redirect, send_file, current_app as app
 import csv
-app = Flask(static_folder='./static')
+app = Flask(__name__, static_folder='./static')
 
 
 @app.route('/')
@@ -43,10 +43,3 @@ def submit():
             return 'Could not save to database'
     else:
         return 'something went wrong'
-
-if __name__ == '__main__':
-	port = int(os.environ.get('PORT', 5000))
-	app.run(host='0.0.0.0', port = port)
-
-
-
