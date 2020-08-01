@@ -1,7 +1,7 @@
 from flask import send_file, current_app as app
 from flask import Flask, render_template, request, redirect, send_file, current_app as app
 import csv
-app = Flask(__name__)
+app = Flask(static_folder='./static')
 
 
 @app.route('/')
